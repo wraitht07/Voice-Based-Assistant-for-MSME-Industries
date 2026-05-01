@@ -4,7 +4,6 @@ Ida.ai is an intelligent billing and inventory management prototype designed to 
 
 🚀 The Core Problem
 Most retail POS (Point of Sale) systems are designed for English-speaking, desk-bound environments. Traditional Indian Kirana stores face:
-
 High Friction: Shopkeepers cannot type while handling products.
 Acoustic Challenges: High background noise and reverberation (the "Well" effect).
 The "Tanglish" Dialect: Spontaneous code-switching between Tamil and English.
@@ -20,31 +19,33 @@ Fuzzy Logic: The model maps colloquial Tamil terms (e.g., சீனி/Seeni) to
 3. Data Integrity (The Ledger)
 Engine: Supabase (PostgreSQL)
 Compliance: Built on a relational foundation to ensure ACID compliance. Every voice-generated bill is cross-referenced against a master Inventory table to ensure pricing accuracy and SKU integrity.
+
 📦 Key Features
 Zero-Touch Billing: Entire orders generated via voice.
 Brand-First Extraction: Prioritizes manufacturer names (Sunsilk, Aavin, Tata) over generic categories.
 Hyper-Localized: Specifically tuned for the Tamil retail context.
 Real-time Inference: Powered by Groq for sub-second processing speed.
+
 📂 Project Structure
 ├── app.py              # Streamlit UI & Orchestration Logic
 ├── .env                # Secure Environment Variables (API Keys)
 ├── requirements.txt    # System Dependencies
 └── README.md           # Documentation
+
 🚦 Getting Started
 1. Install Dependencies
 pip install streamlit groq requests python-dotenv supabase
 2. Configure Environment Variables
 Create a .env file in the root directory:
-
 GROQ_API_KEY=your_key_here
 SARVAM_API_KEY=your_key_here
 SUPABASE_URL=your_url_here
 SUPABASE_ANON_KEY=your_key_here
 3. Launch the Application
 streamlit run app.py
+
 🛤️ Future Roadmap
 To move Ida.ai from a prototype to a production-grade enterprise solution, the following architectural upgrades are planned:
-
 1. Vector Search for Large-Scale Inventories
 As inventory grows beyond 10,000+ SKUs, the current "Full-Context" injection will hit token limits.
 
@@ -63,4 +64,3 @@ The Impact: Reduces "Time-to-First-Token" and allows the shop to continue billin
 4. Predictive Inventory Analytics
 The Upgrade: Integrate a forecasting module using historical sales data stored in PostgreSQL.
 The Impact: The system can automatically voice-alert the shopkeeper: "You are low on Aavin Orange Milk; should I add it to the distributor order?"
-
