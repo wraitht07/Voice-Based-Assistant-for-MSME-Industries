@@ -1,6 +1,7 @@
 🛒 Ida.ai: Hyper-Localized AI Retail Engine
 Vertical SaaS for the Indian Kirana Ecosystem
-Ida.ai is an intelligent billing and inventory management prototype designed to bridge the digital gap for traditional retail shopkeepers. By leveraging specialized Speech-to-Text (STT) and Large Language Models (LLMs), the system converts spontaneous, multi-lingual, and noisy audio orders into structured, ACID-compliant ledger transactions.
+Ida.ai is an intelligent billing and inventory management prototype designed to bridge the digital gap for traditional retail shopkeepers. 
+By leveraging specialized Speech-to-Text (STT) and Large Language Models (LLMs), the system converts spontaneous, multi-lingual, and noisy audio orders into structured, ACID-compliant ledger transactions.
 
 🚀 The Core Problem
 Most retail POS (Point of Sale) systems are designed for English-speaking, desk-bound environments. Traditional Indian Kirana stores face:
@@ -8,6 +9,7 @@ High Friction: Shopkeepers cannot type while handling products.
 Acoustic Challenges: High background noise and reverberation (the "Well" effect).
 The "Tanglish" Dialect: Spontaneous code-switching between Tamil and English.
 Intent Correction: Customers frequently stutter or change their minds mid-order (e.g., "3 Maggi... no, make it 2").
+
 🛠️ Technical Architecture
 1. Acoustic Intelligence (The Ears)
 Engine: Sarvam AI - Saaras:v3
